@@ -39,6 +39,7 @@ a {
     }
 
     &_right {
+        position: relative;
         padding: 2rem;
         margin-left: 28%;
     }
@@ -46,7 +47,8 @@ a {
 
 .Song {
     position: relative;
-    // max-width: 40rem;
+    max-width: 60rem;
+    margin: auto;
     font-size: 12px;
 }
 
@@ -72,6 +74,14 @@ strong {
     .Wrapper_right {
         margin-left: 0;
     }
+
+    .Song {
+        max-width: 100%;
+    }
+}
+
+.Meta {
+    padding-top: 1.5rem;
 }
 
 .Markdown {

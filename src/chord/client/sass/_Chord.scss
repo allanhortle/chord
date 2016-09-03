@@ -1,25 +1,25 @@
 .Chord {
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 .Chord_line {
     position: relative;
     padding-right: 2rem;
-    margin-bottom: 1.5rem;
     clear: both;
     overflow: hidden;
 }
 
 .Chord_title {
     font-size: 1.2em;
+    margin-top: 1.5rem;
 }
 
 .Chord_endOfLine {
     position: absolute;
-    right: 0;
+    right: 1rem;
     bottom: 0;
     font-size: 1.5em;
-    margin: .8rem 0;
+    margin: .7rem 0;
 }
 
 
@@ -27,7 +27,7 @@
     font-size: 1.5em;
     border-left: 2px solid;
     padding: 0 1.2rem;
-    margin: .8rem 0;
+    margin: .7rem 0;
     float: left;
 }
 

@@ -25,15 +25,17 @@ class AppHandler extends React.Component {
 
         return <div className="Wrapper">
             <Code></Code>
-            <div className="Wrapper_right Song">
-                <h1>{song.getIn(['meta', 'name'])}</h1>
-                <div>{metaList}</div>
-                <div className="Grid">
-                    <div className="Col-8">
-                        <Chords data={chords} subdivision={song.getIn(['meta', 'subdivision'])}/>
-                    </div>
-                    <div className="Col-4 Markdown">
-                        <Markdown>{lyrics}</Markdown>
+            <div className="Wrapper_right">
+                <div className="Song">
+                    <div className="Grid">
+                        <div className="Col-8">
+                            <h1>{song.getIn(['meta', 'name'])}</h1>
+                            <Chords data={chords} subdivision={song.getIn(['meta', 'subdivision'])}/>
+                        </div>
+                        <div className="Col-4 Markdown">
+                            <div className="Meta">{metaList}</div>
+                            <Markdown>{lyrics}</Markdown>
+                        </div>
                     </div>
                 </div>
             </div>

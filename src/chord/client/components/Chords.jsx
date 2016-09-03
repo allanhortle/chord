@@ -5,10 +5,11 @@ import {Maybe} from 'monet'
 export default function Chord({data, subdivision = 4}) {
 
     function renderLine(line, key) {
+        const {title, endOfLine, chords} = line.toObject();
         return <li className="Chord_line" key={key}>
-            <div className="Chord_title">{line.get('title')}</div>
-            <div className="Chord_endOfLine">{line.get('endOfLine')}</div>
-            <ul>{line.get('chords').map(renderBar)}</ul>
+            {title && <div className="Chord_title">{title}</div>}
+            <div className="Chord_endOfLine">{endOfLine}</div>
+            <ul>{chords.map(renderBar)}</ul>
         </li>
     }
 
