@@ -1,0 +1,39 @@
+$red: #c55b4e;
+$orange: #e1865a;
+$yellow: #e1ae69;
+$green: #86c797;
+$blue: #6ca6ce;
+
+$cm-background: grey(20);
+$cm-foreground: grey(70);
+$cm-gutter: grey(15);
+
+
+.ReactCodeMirror {
+    }
+
+@each $name, $color in (
+    'header'    color('hero'),
+    'variable-2' color('blue'),
+    'em'        color('blue'),
+    'strong'        color('blue'),
+    'quote'    color('teal'),
+    'comment'   grey(50)
+) {
+    .cm-#{$name} {
+        color: $color !important;
+    }
+}
+.DraftEditor-root {
+    padding: 1rem;
+    height: 100%;
+    position: fixed;
+    width: 28%;
+    background-color: grey(15);
+    color: grey(80);
+    font-family: 'Menlo', monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    overflow: auto;
+
+}

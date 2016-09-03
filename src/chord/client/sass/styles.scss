@@ -1,0 +1,82 @@
+@import '~bruce/bruce';
+@import 'config';
+@include bruce-reset();
+@include bruce-box-sizing();
+@include bruce-grid();
+
+body {
+    margin: 5rem;
+    line-height: 1.8;
+
+    color: grey(20);
+    font-weight: 100;
+    font-family: Courier, monospace;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    // margin: .5rem 0;
+}
+
+a {
+    color: color('blue');
+    margin-right: .25rem;
+
+    &:visited {
+        color: color('purple');
+    }
+}
+
+
+.Wrapper {
+    @include bruce-flood;
+
+    &_left {
+        @include bruce-flood;
+        width: 28%;
+    }
+
+    &_right {
+        padding: 2rem;
+        margin-left: 28%;
+    }
+}
+
+.Song {
+    position: relative;
+    // max-width: 40rem;
+    font-size: 12px;
+}
+
+@import 'Code';
+@import 'Chord';
+
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+@media print {
+    .hide-print,
+    .DraftEditor-root {
+        display: none;
+    }
+
+    .Wrapper_right {
+        margin-left: 0;
+    }
+}
+
+.Markdown {
+    * + * {
+        margin: 1rem 0;
+    }
+
+}

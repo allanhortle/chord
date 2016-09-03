@@ -1,0 +1,37 @@
+.Chord {
+    margin: 1rem 0;
+}
+
+.Chord_line {
+    position: relative;
+    padding-right: 2rem;
+    margin-bottom: 1.5rem;
+    clear: both;
+    overflow: hidden;
+}
+
+.Chord_title {
+    font-size: 1.2em;
+}
+
+.Chord_endOfLine {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.5em;
+    margin: .8rem 0;
+}
+
+
+.Chord_bar {
+    font-size: 1.5em;
+    border-left: 2px solid;
+    padding: 0 1.2rem;
+    margin: .8rem 0;
+    float: left;
+}
+
+.Chord_chord {
+    display: inline-block;
+
+}
